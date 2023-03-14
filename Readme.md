@@ -12,4 +12,4 @@
 
 ### *Используем ветвлениe. Если количество нужных нам элементов в массиве > 0, то с помощью функции* **PrintArray** *печатаем новый массив, иначе выводим пустые квадратные скобки, которые означают, что нужных нам элементов в массиве нет.*
 
-![scheme](blokscheme\scheme.jpg)
+![scheme](https://github.com/VikTitovich/ControlWork/blob/main/BlokScheme/scheme.jpg)
