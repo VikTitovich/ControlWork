@@ -10,6 +10,8 @@ Console.WriteLine($"{Environment.NewLine}Your entered array: ");
 
 PrintArray(array);
 
+int limitLength = 3;
+
 int count = GetCount(array);
 
 string[] arrayNew = new string[count];
@@ -63,7 +65,7 @@ void GetArray(string[] array, string[] arrayNew)
 
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3)
+        if (array[i].Length <= limitLength)
         {
             arrayNew[count] = array[i];
 
@@ -78,7 +80,7 @@ int GetCount(string[] array)
 
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3)
+        if (array[i].Length <= limitLength)
         {
             count++;
         }
