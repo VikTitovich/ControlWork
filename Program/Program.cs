@@ -1,4 +1,33 @@
-﻿int ReadInt(string argument)
+﻿int length = ReadInt("Enter number elements of array: ");
+
+Console.WriteLine();
+
+string[] array = new string[length];
+
+EnterArray(array);
+
+Console.WriteLine($"{Environment.NewLine}Your entered array: ");
+
+PrintArray(array);
+
+int count = GetCount(array);
+
+string[] arrayNew = new string[count];
+
+GetArray(array, arrayNew);
+
+Console.WriteLine($"{Environment.NewLine}Your new array: ");
+
+if (count > 0)
+{
+    PrintArray(arrayNew);
+}
+else
+{
+    Console.WriteLine("[]");
+}
+
+int ReadInt(string argument)
 {
     Console.Write(argument);
 
